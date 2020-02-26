@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box] ;
+rankdir=LR ;
+0 [label="opened <= 0.5\ngini = 0.294\nsamples = 100.0%\nvalue = [0.821, 0.179]"] ;
+1 [label="gini = 0.011\nsamples = 89.6%\nvalue = [0.995, 0.005]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+2 [label="user_past_purchases <= 0.5\ngini = 0.406\nsamples = 10.4%\nvalue = [0.283, 0.717]"] ;
+0 -> 2 [labeldistance=2.5, labelangle=45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 0.5%\nvalue = [1.0, 0.0]"] ;
+2 -> 3 ;
+4 [label="gini = 0.394\nsamples = 9.8%\nvalue = [0.27, 0.73]"] ;
+2 -> 4 ;
+}
